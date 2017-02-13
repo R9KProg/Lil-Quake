@@ -63,6 +63,7 @@ bot.addListener('message#', function(nick, to, text, message) {
         bot.say(to,
           "The bot wars are a bot competition.\n" +
           "The bots will be rated on their ease of use, originality, complexity, realism and usefulness.\n" +
+          "All bots must have source code information publicly available to be considered in the final grading.\n" +
           "The current participants and their bots are:\n"
         );
         for (var i = 0; i < rows.length; i++) {
