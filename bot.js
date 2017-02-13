@@ -74,10 +74,11 @@ bot.addListener('message#', function(nick, to, text, message) {
     }
 
     // GAT
-    var kill = /kill (\S*)/i;
+    var kill = /(kill|gat) (\S*)/i;
     if (text.match(kill)) {
       var killres = text.match(kill);
-      bot.action(to, "GATS down " + killres[1] + " with an UZI.");
+      var weapons = ['an UZI', 'a weeablade', 'a rusty knife', 'GOD\'S WILL', 'his bare hands', 'several cans of silly string'];
+      bot.action(to, "GATS down " + killres[2] + " with " + weapons[Math.floor(Math.random()*weapons.length)]);
       bot.say(to, "BRRAAP BRRAAP PEW PEW");
     }
 
