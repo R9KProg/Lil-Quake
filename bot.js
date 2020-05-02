@@ -27,7 +27,7 @@ function save(fileName, file) {
 /* Disabled for now 
 bot.addListener("join", function (channel, who) {
   if (who !== config.botName) {
-    bot.say(channel, who + ", 'Sup nigga.");
+    bot.say(channel, who + ", 'Sup homie.");
   }
 });
 */
@@ -40,7 +40,7 @@ bot.addListener('message#', function(nick, to, text, message) {
     // Commands command
     var commie = /\b(help|commands)\b/i;
     if (text.match(commie)) {
-      bot.say(to, "Right now all I can do is tell you who's in the bot wars and KILL NIGGAS");
+      bot.say(to, "Right now all I can do is tell you who's in the bot wars ");
     }
 
     // Response to greeting
